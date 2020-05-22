@@ -62,7 +62,7 @@ const ContactButton = styled.div`
 const Nav = () => (
 	<NavStyles>
 		<LinkDiv>
-			<a href="/resume.pdf">
+			<a href="/Resume.pdf">
       	<StyledLink>Resume</StyledLink>
 			</a>
 			<a href="#projects">
