@@ -67,6 +67,7 @@ const ScrollDown = styled.div`
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+  cursor: pointer;
 	animation: ${MoveUpDown} 0.6s infinite alternate;
 `;
 
@@ -129,32 +130,38 @@ const MainPage = () => {
 				<LandingPage>
 					<TextContainer>
 						<h1>Hey, I’m Tyler Chong <span>👋</span></h1>
-						<h2>I’m a JavaScript|PHP Guru Developer based in Toronto, ON Canada.</h2>
+						<h2>Senior Full Stack Developer, <br/> React Specialist, Gatsby/Next Guru, <br/> Front-End Team Lead & Problem Solver</h2>
 					</TextContainer>
 					<ImageContainer>
 						<img src="/profile.png" alt="Profile"></img>
 					</ImageContainer>
 				</LandingPage>
-				<ScrollDown>
+				<ScrollDown onClick={() => {
+          const details = document.getElementById('skills')
+          details.scrollIntoView({
+            block: 'start',
+            inline: 'nearest',
+            behavior: 'smooth'
+          })
+        }}>
 					<img src={Scroll} alt="Scroll Icon"></img>
 				</ScrollDown>
 
-				<Headline>Skills & Tools</Headline>
+				<Headline id="skills">Skills & Tools</Headline>
 				<Skills>
 					<Github></Github>
 
 					<SkillContainer>
 						<Skill name="JavaScript" time="7 years" progress="100" />
-						<Skill name="PHP" time="7 years" progress="100" />
+						<Skill name="TypeScript" time="5 years" progress="70" />
 						<Skill name="React" time="5 years" progress="70" />
 						<Skill name="Redux" time="5 years" progress="70" />
-						<Skill name="Vue.js" time="5 years" progress="70" />
+						<Skill name="Gatsby" time="3 years" progress="45" />
+						<Skill name="Next.js" time="3 years" progress="45" />
 						<Skill name="Node.js" time="6 years" progress="90" />
-						<Skill name="Angular" time="3 years" progress="50" />
-						<Skill name="Laravel" time="7 years" progress="100" />
-						<Skill name="CI/CD" time="4 years" progress="60" />
+						<Skill name="Nest" time="2 years" progress="38" />
 						<Skill name="Docker" time="4 years" progress="60" />
-						<Skill name="Amazon Web Service" time="3 years" progress="50" />
+						<Skill name="AWS" time="3 years" progress="50" />
 						<Tools>
 							<div>Tools</div>
 							<div

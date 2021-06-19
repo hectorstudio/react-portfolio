@@ -26,7 +26,7 @@ const StyledHeader = styled.div`
 
 const Header = props => {
 	return (
-		<div style={{ position: "absolute", width: "100%" }}>
+		<div style={{ position: "fixed", background: 'white', width: "100%", zIndex: 3 }}>
 			<StyledHeader>
 				<div>
 					<Logo>

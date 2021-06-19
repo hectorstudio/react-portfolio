@@ -20,7 +20,7 @@ const LinkDiv = styled.div`
 	}
 `;
 
-const StyledLink = styled.a`
+const StyledLink = styled.div`
 	margin-left: 48px;
 	font-weight: bold;
 	padding: 8px;
@@ -65,17 +65,32 @@ const Nav = () => (
 			<a href="/Resume.pdf">
       	<StyledLink>Resume</StyledLink>
 			</a>
-			<a href="#projects">
-      	<StyledLink>Projects</StyledLink>
-			</a>
-			<a href="#about">
-      	<StyledLink>About</StyledLink>
-			</a>
+      <StyledLink onClick={() => {
+        const details = document.getElementById('projects')
+        details.scrollIntoView({
+          block: 'start',
+          inline: 'nearest',
+          behavior: 'smooth'
+        })
+      }}>Projects</StyledLink>
+      <StyledLink onClick={() => {
+        const details = document.getElementById('about')
+        details.scrollIntoView({
+          block: 'start',
+          inline: 'nearest',
+          behavior: 'smooth'
+        })
+      }}>About</StyledLink>
 		</LinkDiv>
 		<ContactDiv>
-			<a href="#contact">
-				<ContactButton>Contact Me</ContactButton>
-			</a>
+      <ContactButton onClick={() => {
+        const details = document.getElementById('contact')
+        details.scrollIntoView({
+          block: 'start',
+          inline: 'nearest',
+          behavior: 'smooth'
+        })
+      }}>Contact Me</ContactButton>
 		</ContactDiv>
 	</NavStyles>
 );

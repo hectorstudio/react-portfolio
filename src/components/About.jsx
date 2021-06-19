@@ -114,21 +114,21 @@ const About = (props) => {
                 <div></div>
               </Point>
               <Text>
-                Developing with React, Vue, Angular, Node.js for 5 years
+                Developing with React, Redux, Gatsby, Next.js, Node.js for 5 years
               </Text>
             </Item>
             <Item>
               <Point inverse>
                 <div></div>
               </Point>
-              <Text>Developing Fullstack JS/PHP Solutions for 7 years</Text>
+              <Text>3 years of Front-End Team Lead Experience</Text>
             </Item>
             <Item>
               <Point inverse>
                 <div></div>
               </Point>
               <Text>
-                Requirements Analysis & Testdriven Development are not foreign
+                Requirements Analysis & TDD are not foreign
                 words to me
               </Text>
             </Item>
