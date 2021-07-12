@@ -129,7 +129,7 @@ const MainPage = () => {
 			<Container>
 				<LandingPage>
 					<TextContainer>
-						<h1>Hey, I’m Tyler Chong <span>👋</span></h1>
+						<h1>Hey, I’m Jeffrey Xue <span>👋</span></h1>
 						<h2>Senior Full Stack Developer, <br/> React Specialist, Gatsby/Next Guru, <br/> Front-End Team Lead & Problem Solver</h2>
 					</TextContainer>
 					<ImageContainer>

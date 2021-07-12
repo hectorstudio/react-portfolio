@@ -89,7 +89,7 @@ const Contact = props => (
 							<b>Email</b>
 						</div>
 						<div>
-              <div>tylerchong9641@gmail.com</div>
+              <div>jeff.xue777@gmail.com</div>
 						</div>
 					</div>
 				</Container2>
